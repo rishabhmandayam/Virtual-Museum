@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<title>Design a Plane</title>
+	<style type="text/css">
+		hr{
+		height: 10px;
+		border: 0;
+		box-shadow: 0 10px 10px -10px #8c8b8b inset;
+	}
+	.down{
+		transform: rotate(180deg);
+	}
+	</style>
+</head>
+<body>
+<center>
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<h1 style="display:inline; white-space:nowrap;">Plane</h1>
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	</center>
+	<hr>
+	<center>
+	<form>
+<div class="container-fluid" style="background-image: url('back.png');">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Class</label>
+    <div class="form-check">
+  <input class="form-check-input form-check-inline" type="radio" name="c" id="c1" value="1" checked>
+  <label class="form-check-label" for="c1">
+    Fighter
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input form-check-inline" type="radio" name="c" id="c2" value="2">
+  <label class="form-check-label" for="c2">
+      Bomber  
+  </label>
+</div>
+  </div>
+</form>
+<br>
+<br>
+<br>
+<form>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Engine</label>
+    <div class="form-check">
+  <input class="form-check-input form-check-inline" type="radio" name="e" id="e1" value="1" checked>
+  <label class="form-check-label" for="e1">
+    R-2600
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input form-check-inline" type="radio" name="e" id="e2" value="2">
+  <label class="form-check-label" for="e2">
+      Rolls Royce Merlin
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input form-check-inline" type="radio" name="e" id="e3" value="3">
+  <label class="form-check-label" for="e3">
+      Junkers Jumo 004
+  </label>
+</div>
+  </div>
+</form>
+<br>
+<br>
+<br>
+<form>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Purpose</label>
+    <div class="form-check">
+  <input class="form-check-input form-check-inline" type="radio" name="e" id="p1" value="1" checked>
+  <label class="form-check-label" for="p1">
+   Land
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input form-check-inline" type="radio" name="e" id="p2" value="2">
+  <label class="form-check-label" for="p2">
+      Sea
+  </label>
+</div>
+  </div>
+  <button type="button" class="btn btn-primary" onclick="calculate();" data-toggle="modal" data-target="#exampleModal">Submit</button>
+</form>
+</center>
+	<hr>
+<center>
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<h1 style="display:inline; white-space:nowrap;"> Design</h1>
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="planeID" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="planeID">Placeholder</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<img id = "img" src="Placeholder.png">
+      	<p id="planeDescription"></p>
+      </div>
+      <div class="modal-footer">
+      	Thank you for using this plane design interface. Once you are done, please click the back arrow on the left hand corner.
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal-->
+</center>
+<script type="text/javascript">
+	var Class;
+	var Engine;
+	var Purpose;
+	function calculate(){
+		if (document.getElementById('c1').checked) {
+			Class = document.getElementById('c1').value;
+		}
+		if (document.getElementById('c2').checked) {
+			Class = document.getElementById('c2').value;
+		}
+		if (document.getElementById('e1').checked) {
+			Engine = document.getElementById('e1').value;
+		}
+		if (document.getElementById('e2').checked) {
+			Engine = document.getElementById('e2').value;
+		}
+		if (document.getElementById('e3').checked) {
+			Engine = document.getElementById('e3').value;
+		}
+		if (document.getElementById('p1').checked) {
+			Purpose = document.getElementById('p1').value;
+		}
+		if (document.getElementById('p2').checked) {
+			Purpose = document.getElementById('p2').value;
+		}
+		console.log(Class);
+		console.log(Engine);
+		console.log(Purpose);
+		if (Class == 1){
+			if (Engine == 1) {
+				if(Purpose==1){
+					document.getElementById("planeID").innerHTML="Douglas A-20 Havoc";
+					document.getElementById("img").src="havoc.jpg";
+					document.getElementById("planeDescription").innerHTML="The Douglas A-20 Havoc was a multipurpose plane used by the United States. It operated as a fighter, bomber, and an attacker. It used a pair of R-2600 engines. It was a extremely dependable aircraft, but it was not the fastest.";
+				}
+				if (Purpose==2) {
+					document.getElementById("planeID").innerHTML="Grumman F6F Hellcat";
+					document.getElementById("img").src="hellcat.jpg";
+					document.getElementById("planeDescription").innerHTML="The Gruman F6f Hellcat was an American Fighter designed to compete with the Japanese Zero Fighter. It was the primary fighter plane of the United States during the Second Half of the Pacific Front. It was powered by a single R-2600 engine and it is credited with the most kills out of any naval plane in World War 2.";
+				}
+				
+			}
+			if (Engine == 2){
+				if(Purpose==1){
+					document.getElementById("planeID").innerHTML="Supermarine Spitfire";
+					document.getElementById("img").src="spitfire.jpg";
+					document.getElementById("planeDescription").innerHTML="The Supermarine Spitfire was the backbone of the Allied Forces in the European front. It was the only British plane to be manufactured consistantly. It was powered by a single Rolls Royce Merlin engine, and was able to outpreform the Nazi forces and established Allied Superiority.";
+				}
+				if (Purpose==2) {
+					document.getElementById("planeID").innerHTML="Supermarine Seafire";
+					document.getElementById("img").src="seafire.jpg";
+					document.getElementById("planeDescription").innerHTML="The Supermarine Seafire was a modification on the Supermarine Spitfire for Aircraft Carriers. It was powered by a single Rolls Royce Merlin Engine. It was first used during Operation Torch in North Africa.";
+				}
+			}
+			if (Engine == 3){
+				if(Purpose==1){
+					document.getElementById("planeID").innerHTML="Messerschmitt Me 262";
+					document.getElementById("img").src="me26.jpg";
+					document.getElementById("planeDescription").innerHTML="The Messerschmitt Me 262 was the first ever operational jet-powered fighter aircraft. Although it overpowered any Allied aircrafts, it was introduced extremely late in the war and did not have much of an impact.";
+				}
+				if (Purpose==2) {
+					document.getElementById("planeID").innerHTML="Never developed";
+					document.getElementById("img").src="nazi.jpg";
+					document.getElementById("planeDescription").innerHTML="The war ended before the Nazi's could develop any naval jet planes. Thankfully, the Nazi's jet powered planes were never mass produced, preventing the Axis forces from turning the tide of the war.";
+
+				}
+			}
+		}
+		if (Class == 2){
+			if (Engine == 1) {
+				if(Purpose==1){
+					document.getElementById("planeID").innerHTML="North American B-25 Mitchell";
+					document.getElementById("img").src="b-25.jpg";
+					document.getElementById("planeDescription").innerHTML="The B-25 Mitchell was a medium bomber used by the United States during World War 2. Equipped with 2 R-2600 engines, the plane was used in every front in the war. It was named after Major General William Mitchell. It could operate in almost any scenario.";
+				}
+				if (Purpose==2) {
+					document.getElementById("planeID").innerHTML="Curtiss SB2C Helldiver";
+					document.getElementById("img").src="helldiver.jpg";
+					document.getElementById("planeDescription").innerHTML="The Curtiss SB2C Helldiver was a naval dive bomber used by the United States during World War 2. Equipped with a single R-2600 engine, the plane added speed to the US airforce. The plane had difficult handling, causing it to be recalled. Inspite of this, it had an impressive combat record.";
+				}
+				
+			}
+			if (Engine == 2){
+				if(Purpose==1){
+					document.getElementById("planeID").innerHTML="Avro Lancaster";
+					document.getElementById("img").src="avro.jpg";
+					document.getElementById("planeDescription").innerHTML="The Avro Lancaster was a British heavy bomber. This bomber was massive, equipped with 4 Rolls Royce Merlin engines. It could carry 12000 lb loads of bombs and devastated Axis forces. It was the most night succesful bomber in World War 2";
+				}
+				if (Purpose==2) {
+					document.getElementById("planeID").innerHTML="Fairey Battle";
+					document.getElementById("img").src="battle.jpg";
+					document.getElementById("planeDescription").innerHTML="The Fairey Battle was a British light bomber used in the early stages of World War 2. Equipped with a single Rolls Royce engine, this plane was slow moving and had a short range. It was easily picked off by Anti-aircraft. It was quickly recalled after more than 50% were destroyed.";
+				}
+			}
+			if (Engine == 3){
+				if(Purpose==1){
+					document.getElementById("planeID").innerHTML="Junkers Ju 287";
+					document.getElementById("img").src="stuka.jpg";
+					document.getElementById("planeDescription").innerHTML="The Junkers Ju 287, also known as the Stuka bomber, terrorized allied defenses during World War 2. It was a dive bomber, and it created a screeching noise fell towards the earth, dropping bombs as it plunged. The Junkers were the most succesful Axis bomber during World War 2. Fun fact, the screeching of the Tie Fighters in Star Wars is based of the Stuka's screech.";
+				}
+				if (Purpose==2) {
+					document.getElementById("planeID").innerHTML="Never developed";
+					document.getElementById("img").src="nazi.jpg";
+					document.getElementById("planeDescription").innerHTML="The war ended before the Nazi's could develop any naval jet planes. Thankfully, the Nazi's jet powered planes were never mass produced, preventing the Axis forces from turning the tide of the war.";
+				}
+			}
+		}
+	}
+</script>
+</body>
+</html>
