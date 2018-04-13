@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<title>Museum Exihibit</title>
+	<style type="text/css">
+	hr{
+		height: 10px;
+		border: 0;
+		box-shadow: 0 10px 10px -10px #8c8b8b inset;
+	}
+	.down{
+		transform: rotate(180deg);
+	}
+	</style>
+</head>
+<body>
+	<center>
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<h1 style="display:inline; white-space:nowrap;">World War 2</h1>
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	<img src = "pillar.PNG" style="display:inline; white-space:nowrap;">
+	</center>
+<hr id="hr1">
+<div class="container-fluid" style="background-image: url('ocean.jpg');">
+<center>
+<div class="container-fluid" id = "floor" style="background-image: url('floor.PNG');width: 900px;height: 450px" >
+<br>
+<br>
+<br>
+<br>
+	<div class="row">
+    	<div class="col">
+      		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Engines">
+      		1. Engines
+      		</button>
+    	</div>
+    	<div class="col">
+      		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Wings">
+      		2. The Davis Wing
+      		</button>
+    	</div>
+    	<div class = "col">
+    		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fortress">
+      		3. Superfortress
+      		</button>
+    	</div>
+    </div>
+<br>
+<br>
+<br>
+<div class="row">
+    	<div class="col">
+      		<a href="https://docs.google.com/document/d/1fZKQiby6ecMn5MYl2L2_xQjaNCEbVIM7Tg2SDLSa7wo/edit" target="blank" class="btn btn-primary" role="button" aria-pressed="true">Introduction</a>
+    	</div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fuel">
+      		4. Fuel Tanks
+      	</button>
+    </div>
+    <div class="col">
+      <a href="./quiz/index.html" class="btn btn-primary" role="button" aria-pressed="true">5. Design a Plane</a>
+    </div>
+    <div class="col">
+      
+    </div>
+  </div>
+	</div>
+<br>
+<br>
+</center>
+</div>
+<hr>
+<center>
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<h1 style="display:inline; white-space:nowrap;">Museum</h1>
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+<img src = "pillar.PNG" style="display:inline; white-space:nowrap;" class = "down">
+</center>
+<!--Modals -->
+<!--Engine-->
+<center>
+<div class="modal fade" id="Engines" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Engines</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-outline-primary" style="background-image: url('r-2600.jpg');height:100px;width:100px;" data-toggle="modal" data-target="#2600"></button>
+        <button type="button" class="btn btn-outline-primary" style="background-image: url('merlin-23.jpg');height:100px;width:100px;" data-toggle="modal" data-target="#merlin"></button>
+        <button type="button" class="btn btn-outline-primary" style="background-image: url('jumo.jpg');height:100px;width:100px;" data-toggle="modal" data-target="#jumo"></button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="2600" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">R-2600</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<img src="r-2600big.jpg">
+      	<hr id="1">
+      	The R-2600 Twin Cyclone was a powerful engine used by the United States in World War 2. It was built using 14 cylinders arranged in 2 rows. It could produce up to 1,300 kW of power and it weighed approximately 2000 lbs. It was used on the  F6F Hellcat, A-20 Havoc, B-25 Mitchell, TBF Avenger, SB2C Helldiver, and PBM Mariner.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="merlin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Rolls-Royce Merlin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<img src="merlinbig.jpg">
+      	<hr id="1">
+      	The Rolls-Royce Merlin is a British liquid-cooled V-12 piston aero engine. Its max capacity was 27 liters of fuel. It could produce up to 770 kW of power. It was used on the  Fairey Battle, Hawker Hurricane, Supermarine Spitfire, and the Lancaster Bomber
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="jumo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Junkers Jumo 004</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<audio controls>
+          <source src="sound.mp3" type="audio/mpeg">
+        </audio>
+      	<hr id="1">
+        	The Junker Jumo 004 was a breakthrough in aerial technology. It was the first ever turbo jet engine in operational use. Invented by German scientists, it could produce a up 17.7 kW per second. It was used on the Messerschmitt Me 262 fighter and the Arado Ar 234 reconnaissance/bomber.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Engine-->
+<!--Wings-->
+<div class="modal fade" id="Wings" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">The Davis Wing</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<img src="davisbig.PNG">
+      	<hr>
+      	The High Ratio Davis Wing was an American Wing primarily used on bombers. This wing was highly efficient, allowing a relatively high airspeed and long range. The wing was very thick, allowing better lift, but it had many tradeoffs. The wings were illequiped to handle bad weather and heaviar loads. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Wings-->
+<!--SuperFortress-->
+<div class="modal fade" id="fortress" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">B-29 Superfortress</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<img src="b-29.jpg">
+      	<hr>
+      	The B-29 Superfortress was one of the most powerfull bombers in World War 2. It was a four-engine propeller-driven heavy bomber designed by Boeing and boasted a production cost 1.7 billion dollars more than the Manhattan Project. It featured the best technology including massive defense cannons and the first-ever cabin pressure system in a bomber. It could carry 2,200 lbs of bombs, the most of any allied bomber.
+        <hr>
+        Please Answer the Following Questions:
+        <hr>
+        1. What features of the B-29 made it so effecitive?
+        <hr>
+        2. How did the B-29 prioritize comfort of its crew?
+        <hr>
+        3. Why do you think it was important for the US government to allocate so much money to the B-29?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--SuperFortress-->
+<!--Fuel-->
+<div class="modal fade" id="fuel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Self-Sealing Fuel Tanks</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<img src="fuel.jpg">
+      	<hr>
+      	Self-Sealing technology prevented fuel tanks from leaking fuel and igniting after being damaged by enemy fire. Preventing planes from catching fire increased the durability of the American Air Force significantly. Self-sealing tanks have multiple layers of rubber and reinforcing fabric, layer of vulcanized rubber, and layer of untreated natural rubber. When the fuel tank is hit, the fuel seeps into the layers, causing the untreated layer to swell.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Fuel-->
+<!--Modals -->
+</center>
+</body>
+</html>
